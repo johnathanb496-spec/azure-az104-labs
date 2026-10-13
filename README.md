@@ -1,30 +1,15 @@
-# Johnathan-az104-labs
-Hands-on labs and real-world projects from the Microsoft AZ-104 Azure Administrator Associate certification. Includes ARM templates, PowerShell/CLI scripts, screenshots, and detailed documentation.
+# Azure AZ-104 Course Labs
 
-# AZ-104: Azure Administrator Associate Labs & Projects
+Bicep lab files from my AZ-104 (Azure Administrator) exam preparation, built by following Alan Rodrigues' Udemy course and Microsoft Learn labs. I passed the exam.
 
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)  
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+These are course exercises, not original designs. I keep them as a reference.
 
-**My hands-on portfolio** for the Microsoft AZ-104 certification (completed March/April 2026).  
-This repository contains every lab I built while studying with Alan Rodrigues' Udemy course + Microsoft Learn sandboxes.
+## Contents
 
-## Skills Demonstrated
-- Azure Compute (VMs, Scale Sets, App Services, Containers)
-- Virtual Networking (VNet, NSG, Peering, Load Balancer, Bastion)
-- Storage & Backup (Blob, Files, Recovery Services Vault)
-- Identity & Governance (Entra ID, RBAC, Azure Policy, ARM Templates)
-- Monitoring & Troubleshooting (Azure Monitor, Advisor)
+- `Labs/` has Bicep modules for a virtual network, NSG, storage account, Windows and Linux VMs, internal load balancer, public IP, and VNet peering.
+- `main.bicep` and `dev.parameters.json` tie the modules together. The module paths in `main.bicep` reflect my original local layout, so it won't run as-is.
+- Secrets and identifiers have been removed from the parameters file.
 
+## Known limitation
 
-Each folder contains:
-- Screenshots of the deployed resources
-- ARM/Bicep templates or scripts I created
-- Step-by-step markdown documentation
-
-## How to Use This Repo
-Feel free to clone and explore! All labs were built in a real Azure subscription.
-
-Connect with me on [LinkedIn](https://www.linkedin.com/in/johnathan-bennett-437b21196/) or email me if you'd like to discuss any of these projects.
-
-⭐ Star this repo if it helped you!
+The NSG sample allows RDP from any source. That was a lab shortcut and should never be used in production.
