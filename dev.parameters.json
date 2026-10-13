@@ -4,7 +4,7 @@
   "parameters": {
     "linuxWebConfig": {
       "value": {
-        "scriptUri": "https://stcloudhubdeveus123.blob.core.windows.net/scripts/setup-nodejs.sh?sp=r&st=2026-05-29T01:44:03Z&se=2026-05-29T09:59:03Z&spr=https&sv=2026-02-06&sr=b&sig=RPUmLVfcsl2aRgteRf01zBRoyIPO6CvxYakuSioaqgk%3D",
+        "scriptUri": "https://stcloudhubdeveus123.blob.core.windows.net/scripts/setup-nodejs.sh",
         "vmSize": "Standard_D2s_v3",
         "adminUsername": "linuxadmin",
         "baseName": "dev-nodejs",
@@ -21,7 +21,7 @@
     "winWebAdminPassword": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/59bf4093-7398-4322-8616-dd3c00c5dff7/resourceGroups/app-grp/providers/Microsoft.KeyVault/vaults/cloudvault4321"
+          "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/app-grp/providers/Microsoft.KeyVault/vaults/cloudvault4321"
         },
         "secretName": "win-web-admin-password"
       }
@@ -29,14 +29,14 @@
     "linuxWebAdminPassword": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/59bf4093-7398-4322-8616-dd3c00c5dff7/resourceGroups/app-grp/providers/Microsoft.KeyVault/vaults/cloudvault4321"
+          "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/app-grp/providers/Microsoft.KeyVault/vaults/cloudvault4321"
         },
         "secretName": "linux-web-admin-password"
       }
     },
     "winWebConfig": {
       "value": {
-        "scriptUri": "https://stcloudhubdeveus123.blob.core.windows.net/scripts/setup-iis.ps1?sp=r&st=2026-05-29T01:44:03Z&se=2026-05-29T09:59:03Z&spr=https&sv=2026-02-06&sr=b&sig=RPUmLVfcsl2aRgteRf01zBRoyIPO6CvxYakuSioaqgk%3D",
+        "scriptUri": "https://stcloudhubdeveus123.blob.core.windows.net/scripts/setup-iis.ps1",
         "vmSize": "Standard_D2s_v3",
         "adminUsername": "azureadmin",
         "baseName": "dev-web",
